@@ -1,6 +1,8 @@
 const tasks = require('./../../data/tasks.json')
 const repository = require('./../repository/tasks.repository')
 
+// Tratamentos das inserções, updates, exportações de dados, remoção
+
 exports.get = async (req, res) => {
     try {
         let tasks = await repository.get()

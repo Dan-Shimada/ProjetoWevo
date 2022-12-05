@@ -3,17 +3,14 @@ import TasksService from './Service/Tasks.service.js'
 import TaskController from './Controller/Tasks.controller.js'
 import TasksView from './View/Tasks.View.js'
 
+// Tratamento dos eventos de cliques
+
 const taskService = new TasksService()
-
 const ul = document.getElementById("todo-list")
-
 const tasksView = new TasksView(ul)
-
 const taskController = new TaskController(taskService, tasksView)
-
 const itemInput = document.getElementById("item-input")
 const todoAddForm = document.getElementById("todo-add")
-
 const lis = ul.getElementsByTagName("li")
 
 taskController.getTasks()

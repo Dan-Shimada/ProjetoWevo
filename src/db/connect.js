@@ -1,3 +1,5 @@
+// conexão com mongoose
+
 const mongoose = require("mongoose")
 
 const connectDB = (url) => {

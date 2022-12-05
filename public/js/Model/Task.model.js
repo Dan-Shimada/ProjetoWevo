@@ -1,6 +1,6 @@
 import {userId} from './../config.js'
 export function Task(title, completed, createdAt, updatedAt, id) {
-
+// manipulação dos documentos no banco de de dados
     if (!title) {
         throw new Error("Task need a required parameter: title")
     }

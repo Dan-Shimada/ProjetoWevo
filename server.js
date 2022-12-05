@@ -3,7 +3,7 @@ const app = require('./src/app')
 const connectDB = require('./src/db/connect')
 const PORT = process.env.PORT || 3000
 const url = process.env.MONGO_URL;
-
+// conexão com o banco de dados
 const main = async () => {
     try {
         await connectDB(url)
